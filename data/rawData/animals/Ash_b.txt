@@ -1,0 +1,11 @@
+cow
+pig
+sheep
+salmon
+trout
+herring
+whitebait
+tuna
+sunfish
+clownfish
+flatfish

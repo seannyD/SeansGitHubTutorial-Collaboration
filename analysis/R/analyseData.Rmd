@@ -1,0 +1,100 @@
+---
+title: "Timed listing"
+output: html_document
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), "../../results/MainResults.html")) })
+---
+
+# Intro
+
+# Load libraries
+
+```{r}
+library(gplots)
+```
+
+
+# Load data
+
+```{r echo=F}
+try(setwd("~/Documents/Teaching/IntroToGitHub/TutorialFolders/collaborationTutorial/analysis/R/"))
+```
+
+
+```{r}
+
+rawDataFolder = "../../data/rawData/animals/"
+
+files = list.files(rawDataFolder, pattern="*.txt")
+
+d = data.frame()
+for(f in files){
+  fileBits = strsplit(gsub("\\.txt","",f),"_")[[1]]
+  if(length(fileBits)==2){
+  
+    dx = read.delim(paste(rawDataFolder,f,sep=''), 
+                    header=F,
+                    stringsAsFactors =F)
+    
+    
+    dx = data.frame(responses = dx[,1], stringsAsFactors = F)
+    
+    # add name and bilingual status
+    dx$name = fileBits[1]
+    dx$bilingual = fileBits[2]=="b" || fileBits[2]=="B"
+    
+    # make lower case
+    dx$responses = tolower(dx$responses)
+    # get rid of duplicate answers
+    dx = dx[!duplicated(dx$responses),]
+    # get rid of empty answers
+    dx = dx[nchar(gsub(" ","",dx$responses))>0 
+            & !is.na(dx$responses),]
+    
+    
+    d = rbind(d,dx)
+  }
+}
+
+```
+
+## How many responses per participant?
+
+```{r}
+
+numResponses = table(d$name)
+
+hist(table(d$name),
+     xlab="Number of responses per participant")
+```
+
+## Responses by linguistic background
+
+```{r}
+lingBack = c("Monolingual","Bilingual")[
+  tapply(d$bilingual,d$name,head,n=1) + 1]
+
+plotmeans(numResponses~lingBack,
+          xlab='Linguistic Background',
+          ylab='Numer of responses')
+
+```
+
+
+## Most common responses
+
+```{r}
+animals = rev(sort(table(d$responses)))
+
+if(length(animals)>20){
+  animals = animals[1:20]
+  }
+
+barplot(rev(animals), 
+        horiz = T, las=1,
+        xlab= "Frequency")
+```
+
+
+
+
+
