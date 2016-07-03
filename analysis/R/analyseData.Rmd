@@ -57,6 +57,13 @@ for(f in files){
 
 ```
 
+Save data to processed folder.
+
+```{r}
+write.csv(d,"../../data/processedData/AnimalResponses.csv", row.names = F)
+```
+
+
 ## How many responses per participant?
 
 ```{r}
