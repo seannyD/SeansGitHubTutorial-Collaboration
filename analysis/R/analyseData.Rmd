@@ -8,7 +8,7 @@ knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = e
 
 # Load libraries
 
-```{r}
+```{r warning=FALSE}
 library(gplots)
 ```
 
@@ -107,4 +107,6 @@ barplot(rev(animals),
 The `r if(length(numResponses[numResponses==max(numResponses)])==1){"person"} else {"people"}` with the highest number of responses (`r max(numResponses)` responses) `r if(length(numResponses[numResponses==max(numResponses)])==1){"was"} else {"were"}`: 
 
 `r paste("-  ",paste(names(numResponses[numResponses==max(numResponses)]),sep='\n-  '))`
+
+The longest average word lengths were typed by `r names(rev(sort(tapply(d$responses,d$name,function(X){sum(nchar(X))})/ tapply(d$responses,d$name,length))))[1]` (`r rev(sort(tapply(d$responses,d$name,function(X){sum(nchar(X))})/ tapply(d$responses,d$name,length)))[1]` characters).
 
