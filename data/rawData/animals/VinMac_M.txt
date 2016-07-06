@@ -1,0 +1,12 @@
+cat
+dog
+horse
+chicken
+crocoodile
+hyp
+hyena
+giraffe
+elephabt
+bat
+duck
+goose
