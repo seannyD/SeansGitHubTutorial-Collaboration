@@ -69,6 +69,7 @@ write.csv(d,"../../data/processedData/AnimalResponses.csv", row.names = F)
 ```{r}
 
 numResponses = table(d$name)
+numResponses = numResponses[!is.na(numResponses)]
 
 hist(table(d$name),
      xlab="Number of responses per participant")
@@ -103,7 +104,7 @@ barplot(rev(animals),
 
 ## The Winners
 
-The people with the highest number of responses (`r max(numResponses)` responses) were: 
+The `r if(length(numResponses[numResponses==max(numResponses)])==1){"person"} else {"people"}` with the highest number of responses (`r max(numResponses)` responses) `r if(length(numResponses[numResponses==max(numResponses)])==1){"was"} else {"were"}`: 
 
 `r paste("-  ",paste(names(numResponses[numResponses==max(numResponses)]),sep='\n-  '))`
 

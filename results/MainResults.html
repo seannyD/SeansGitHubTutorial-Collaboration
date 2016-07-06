@@ -170,6 +170,7 @@ for(f in files){
 <div id="how-many-responses-per-participant" class="section level2">
 <h2>How many responses per participant?</h2>
 <pre class="r"><code>numResponses = table(d$name)
+numResponses = numResponses[!is.na(numResponses)]
 
 hist(table(d$name),
      xlab=&quot;Number of responses per participant&quot;)</code></pre>
@@ -200,9 +201,9 @@ barplot(rev(animals),
 </div>
 <div id="the-winners" class="section level2">
 <h2>The Winners</h2>
-<p>The people with the highest number of responses were:</p>
+<p>The person with the highest number of responses (24 responses) was:</p>
 <ul>
-<li>shiri.</li>
+<li>shiri</li>
 </ul>
 </div>
 </div>
