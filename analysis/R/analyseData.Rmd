@@ -101,7 +101,9 @@ barplot(rev(animals),
         xlab= "Frequency")
 ```
 
+## The Winners
 
+The people with the highest number of responses (`r max(numResponses)` responses) were: 
 
-
+`r paste("-  ",paste(names(numResponses[numResponses==max(numResponses)]),sep='\n-  '))`
 
