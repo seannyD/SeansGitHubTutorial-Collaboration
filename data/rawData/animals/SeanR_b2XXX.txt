@@ -1,9 +1,0 @@
-unicorn
-phoenix
-mermaid
-harpie
-basilisk
-centaur
-goblin
-griffin
-manticore
