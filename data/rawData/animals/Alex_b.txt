@@ -1,0 +1,12 @@
+Bear
+Fish
+Cat
+Dog
+Mouse
+Rat
+Dolphin
+Gorilla
+Monkey
+Horse
+Cow
+Yak
