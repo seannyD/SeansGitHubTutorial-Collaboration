@@ -1,0 +1,8 @@
+hamster
+shark
+whale
+raven
+crow
+cow
+horned raven
+rhino
