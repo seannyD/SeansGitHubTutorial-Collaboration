@@ -1,0 +1,11 @@
+perro
+gato
+pájaro
+manatí
+dinosaurio
+gallina
+pollo
+caballo
+gusano
+oveja
+borrego
