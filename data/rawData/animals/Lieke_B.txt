@@ -1,0 +1,13 @@
+kat
+hond'giraffe
+muis
+rat
+kip
+paard
+koe
+slang
+spin
+vogel
+zeeegel
+dolfijn
+bever
