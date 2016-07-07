@@ -1,0 +1,20 @@
+dog
+cat
+horse
+cow
+sea-cucumber
+fish
+salamander
+snake
+spider
+mouse
+rat
+guinea pig
+rattlesnake
+bee
+wasp
+fly
+mosquito
+moth
+whale
+dolphin

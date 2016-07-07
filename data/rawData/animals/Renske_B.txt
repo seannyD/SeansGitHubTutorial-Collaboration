@@ -1,0 +1,12 @@
+bear
+elephant
+cow
+goat
+pig
+snake
+monkey
+gorilla
+beetle
+bunny
+hamster
+mosquito

@@ -1,0 +1,8 @@
+cat
+dog
+horse
+pig
+cow
+bird
+swan
+duck

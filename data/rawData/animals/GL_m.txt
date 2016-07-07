@@ -1,0 +1,15 @@
+cat
+dog
+pig
+cow
+sheep
+goat
+duck
+goose
+puffin
+penguin
+heron
+hen harrier
+ostrich
+emu
+blue tit

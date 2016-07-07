@@ -1,0 +1,13 @@
+elephant
+emu
+pig
+duck
+frog
+chicken
+bull
+cow
+sheep
+eagle
+horse
+gnu
+

@@ -1,0 +1,11 @@
+bear
+mouse
+guinea pig
+cat
+dog
+goat
+sheep
+cow
+rat
+snake
+fly 
