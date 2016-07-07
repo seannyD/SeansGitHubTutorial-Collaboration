@@ -1,0 +1,11 @@
+chimpanzee
+dolphin
+monkey
+lion
+tiger
+leopard
+mouse
+elephant
+shark
+jellyfish
+tamarin
