@@ -1,0 +1,12 @@
+pig
+cow
+dog
+horse
+monkey
+sheep
+goat
+fish
+gorilla
+salmon
+mouse
+giraffe
