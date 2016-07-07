@@ -1,0 +1,11 @@
+boar
+pig
+duck
+goose
+platypus
+heron
+nightingale
+cow
+chicken
+sheep
+
