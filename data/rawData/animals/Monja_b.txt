@@ -1,0 +1,11 @@
+hond
+kat 
+muis
+bever
+paard
+rat
+olifant
+giraffe
+tucan
+egel
+bambi
